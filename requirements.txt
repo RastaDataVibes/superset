@@ -1,0 +1,7 @@
+apache-superset==3.1.0
+psycopg2-binary
+mysqlclient
+pybigquery
+sqlalchemy-bigquery
+redis
+gunicorn
