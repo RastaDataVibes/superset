@@ -4,4 +4,4 @@ set -e
 superset db upgrade
 superset init
 
-gunicorn -w 4 --timeout 120 -b 0.0.0.0:8088 "superset.app:create_app()"
+exec superset run -h 0.0.0.0 -p 8088 --with-threads --reload
