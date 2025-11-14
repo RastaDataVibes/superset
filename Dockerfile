@@ -24,6 +24,7 @@ COPY setup.sh /app/setup.sh
 
 RUN chmod +x /app/entrypoint.sh /app/setup.sh
 
+ENV PATH="/root/.local/bin:$PATH"
 ENV PYTHONPATH="/app/pythonpath:${PYTHONPATH}"
 
 EXPOSE 8088
